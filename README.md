@@ -44,9 +44,6 @@ config, dropzone or malware binary instead of the FQDN / IP address.
 
 For more information on this feed go to: https://zeustracker.abuse.ch/blocklist.php?download=compromised
 
-#### Contact Information
-contactme@abuse.ch 
-
 ### Using the Zeus Tracker feeds API
  The Zeus Tracker feeds API is found on github at
 
