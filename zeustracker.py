@@ -4,7 +4,7 @@ import os
 
 inteltype = ['INTEL_URL','INTEL_ADDR','INTEL_DOMAIN']
 path = os.environ["WORKDIR"]
-with open(path + "/enrichment_plugins/zuestracker/dnifconfig.yml", 'r') as ymlfile:
+with open(path + "/enrichment_plugins/zeustracker/dnifconfig.yml", 'r') as ymlfile:
     cfg = yaml.load(ymlfile)
 
 
