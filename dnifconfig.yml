@@ -1,4 +1,4 @@
 enrichment_plugin:
-  ZUESTRACKER_DOMAIN_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
-  ZUESTRACKER_IP_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=badips
-  ZUESTRACKER_URL_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=compromised
+  ZEUSTRACKER_DOMAIN_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=baddomains
+  ZEUSTRACKER_IP_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=badips
+  ZEUSTRACKER_URL_SOURCE: https://zeustracker.abuse.ch/blocklist.php?download=compromised
