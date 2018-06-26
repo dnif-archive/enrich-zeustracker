@@ -10,7 +10,7 @@ with open(path + "/enrichment_plugins/zeustracker/dnifconfig.yml", 'r') as ymlfi
 
 def import_url_intel():
     try:
-        source = cfg['enrichment_plugin']['ZUESTRACKER_URL_SOURCE']
+        source = cfg['enrichment_plugin']['ZEUSTRACKER_URL_SOURCE']
         response = requests.get(source)
     except Exception, e:
         print 'Api Request Error %s' % e
@@ -25,10 +25,10 @@ def import_url_intel():
                 tmp_dict["EvtType"] = "URL"
                 tmp_dict["EvtName"] = s
                 tmp_dict2 = {}
-                tmp_dict2["IntelRef"] = ["ZUESTRACKER"]
+                tmp_dict2["IntelRef"] = ["ZEUSTRACKER"]
                 tmp_dict2["IntelRefURL"] = [source]
                 b_lst = []
-                b_lst.append("ZuesC&C")
+                b_lst.append("ZeusC&C")
                 tmp_dict2["ThreatType"] = b_lst
                 tmp_dict["AddFields"] = tmp_dict2
                 lines.append(tmp_dict)
@@ -39,7 +39,7 @@ def import_url_intel():
 
 def import_ip_intel():
     try:
-        source = cfg['enrichment_plugin']['ZUESTRACKER_IP_SOURCE']
+        source = cfg['enrichment_plugin']['ZEUSTRACKER_IP_SOURCE']
         response = requests.get(source)
     except Exception, e:
         print 'Api Request Error %s' % e
@@ -54,10 +54,10 @@ def import_ip_intel():
                 tmp_dict["EvtType"] = "IPv4"
                 tmp_dict["EvtName"] = s
                 tmp_dict2 = {}
-                tmp_dict2["IntelRef"] = ["ZUESTRACKER"]
+                tmp_dict2["IntelRef"] = ["ZEUSTRACKER"]
                 tmp_dict2["IntelRefURL"] = [source]
                 b_lst = []
-                b_lst.append("ZuesC&C")
+                b_lst.append("ZeusC&C")
                 tmp_dict2["ThreatType"] = b_lst
                 tmp_dict["AddFields"] = tmp_dict2
                 lines.append(tmp_dict)
@@ -68,7 +68,7 @@ def import_ip_intel():
 
 def import_domain_intel():
     try:
-        source = cfg['enrichment_plugin']['ZUESTRACKER_DOMAIN_SOURCE']
+        source = cfg['enrichment_plugin']['ZEUSTRACKER_DOMAIN_SOURCE']
         response = requests.get(source)
     except Exception, e:
         print 'Api Request Error %s' % e
@@ -83,10 +83,10 @@ def import_domain_intel():
                 tmp_dict["EvtType"] = "DOMAIN"
                 tmp_dict["EvtName"] = s
                 tmp_dict2 = {}
-                tmp_dict2["IntelRef"] = ["ZUESTRACKER"]
+                tmp_dict2["IntelRef"] = ["ZEUSTRACKER"]
                 tmp_dict2["IntelRefURL"] = [source]
                 b_lst = []
-                b_lst.append("ZuesC&C")
+                b_lst.append("ZeusC&C")
                 tmp_dict2["ThreatType"] = b_lst
                 tmp_dict["AddFields"] = tmp_dict2
                 lines.append(tmp_dict)
