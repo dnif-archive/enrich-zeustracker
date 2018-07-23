@@ -44,6 +44,15 @@ config, dropzone or malware binary instead of the FQDN / IP address.
 
 For more information on this feed go to: https://zeustracker.abuse.ch/blocklist.php?download=compromised
 
+### PRE-REQUISITES to use ZeuS Tracker feeds and DNIF  
+Outbound access required to request ZeuS Tracker feeds API
+
+| Protocol   | Source IP  | Source Port  | Direction	 | Destination Domain | Destination Port  |  
+|:------------- |:-------------|:-------------|:-------------|:-------------|:-------------|  
+| TCP | AD,A10 | Any | Egress	| github.com | 443 |
+| TCP | AD,A10 | Any | Egress	| zeustracker.abuse.ch | 443 | 
+
+
 ### Using the Zeus Tracker feeds API
  The Zeus Tracker feeds API is found on github at
 
